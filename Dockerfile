@@ -8,6 +8,8 @@ RUN apt install python3-pip -y
 
 RUN python3 -m pip install django
 
+RUN python3 -m pip install numpy
+
 RUN apt-get install iproute2 -y
 
 COPY pokemon /usr/pokemon
